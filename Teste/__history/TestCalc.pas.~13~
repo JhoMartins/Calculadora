@@ -26,6 +26,9 @@ type
     procedure TearDown; override;
   published
     procedure TestAdicao;
+    procedure TestAdicaoUmNumeroNegativo;
+    procedure TestAdicaoDoisNumerosNegativos;
+    procedure TesteSubtracaoNumerosPositivos;
   end;
 
 implementation
@@ -44,6 +47,22 @@ end;
 procedure TestTCalc.TestAdicao;
 begin
   CheckEquals(25,FCalc.Adicao(10,15));
+end;
+
+procedure TestTCalc.TestAdicaoDoisNumerosNegativos;
+begin
+  CheckEquals(-15,FCalc.Adicao(-10,-5));
+end;
+
+procedure TestTCalc.TestAdicaoUmNumeroNegativo;
+begin
+  CheckEquals(5,FCalc.Adicao(10,-5));
+  CheckEquals(5,FCalc.Adicao(-5,10));
+end;
+
+procedure TestTCalc.TesteSubtracaoNumerosPositivos;
+begin
+   CheckEquals(5,FCalc.Subtracao(10,5));
 end;
 
 initialization

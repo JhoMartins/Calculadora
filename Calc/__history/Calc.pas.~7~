@@ -6,6 +6,7 @@ type TCalc = class
 public
       function Adicao(x,y : integer):integer;
       function Subtracao (x,y : integer):integer;
+      procedure ovelha;
 end;
 
 implementation
@@ -16,6 +17,11 @@ implementation
 function TCalc.Adicao(x, y: integer): integer;
 begin
    Result:= x + y;
+end;
+
+procedure TCalc.ovelha;
+begin
+
 end;
 
 function TCalc.Subtracao(x, y: integer): integer;
