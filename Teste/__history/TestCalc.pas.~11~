@@ -21,10 +21,15 @@ type
   strict private
     FCalc: TCalc;
   public
+    y, x: Integer;
     procedure SetUp; override;
     procedure TearDown; override;
+    procedure TesteSubtracaoNUmerosPositivos;
   published
     procedure TestAdicao;
+    procedure TestAdicaoUmNumeroNegativo;
+    procedure TestAdicaoDoisNumerosNegativos;
+
   end;
 
 implementation
@@ -41,14 +46,24 @@ begin
 end;
 
 procedure TestTCalc.TestAdicao;
-var
-  ReturnValue: Integer;
-  y: Integer;
-  x: Integer;
 begin
-  // TODO: Setup method call parameters
-  ReturnValue := FCalc.Adicao(x, y);
-  // TODO: Validate method results
+  CheckEquals(25,FCalc.Adicao(10,15));
+end;
+
+procedure TestTCalc.TestAdicaoDoisNumerosNegativos;
+begin
+  CheckEquals(-15,FCalc.Adicao(-10,-5));
+end;
+
+procedure TestTCalc.TestAdicaoUmNumeroNegativo;
+begin
+  CheckEquals(5,FCalc.Adicao(10,-5));
+  CheckEquals(5,FCalc.Adicao(-5,10));
+end;
+
+procedure TestTCalc.TesteSubtracaoNUmerosPositivos;
+begin
+   CheckEquals(5,FCalc.
 end;
 
 initialization

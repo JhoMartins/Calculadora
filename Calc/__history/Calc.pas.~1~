@@ -5,7 +5,6 @@ interface
 type TCalc = class
 public
       function Adicao(x,y : integer):integer;
-      function Subtracao (x,y : integer):integer;
 end;
 
 implementation
@@ -16,11 +15,6 @@ implementation
 function TCalc.Adicao(x, y: integer): integer;
 begin
    Result:= x + y;
-end;
-
-function TCalc.Subtracao(x, y: integer): integer;
-begin
-  Result:= x - y;
 end;
 
 end.

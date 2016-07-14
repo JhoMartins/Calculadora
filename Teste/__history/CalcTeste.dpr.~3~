@@ -16,8 +16,7 @@ program CalcTeste;
 
 uses
   DUnitTestRunner,
-  TestCalc in 'TestCalc.pas',
-  Calc in '..\Calc\Calc.pas';
+  TestCalc in 'TestCalc.pas';
 
 {$R *.RES}
 

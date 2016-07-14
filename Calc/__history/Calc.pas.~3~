@@ -2,7 +2,7 @@ unit Calc;
 
 interface
 
-type TCalc = class
+type TCalculo = class
 public
       function Adicao(x,y : integer):integer;
       function Subtracao (x,y : integer):integer;
@@ -13,12 +13,12 @@ implementation
 
 { TCalc }
 
-function TCalc.Adicao(x, y: integer): integer;
+function TCalculo.Adicao(x, y: integer): integer;
 begin
    Result:= x + y;
 end;
 
-function TCalc.Subtracao(x, y: integer): integer;
+function TCalculo.Subtracao(x, y: integer): integer;
 begin
   Result:= x - y;
 end;
