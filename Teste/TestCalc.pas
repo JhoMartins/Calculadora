@@ -30,6 +30,9 @@ type
     procedure TesteSubtracaoNumerosPositivos;
     procedure TestSubtracaoUmNumeroNegativo;
     procedure TestSubtracaoDoisNumerosNegativos;
+    procedure TestMultiplicacaoNumerosPositivos;
+    procedure TestMultipicacaoUmNumeroNegativo;
+    procedure TestMultiplicacaoDoisNumerosNegativos;
   end;
 
 implementation
@@ -64,6 +67,22 @@ end;
 procedure TestTCalc.TesteSubtracaoNumerosPositivos;
 begin
    CheckEquals(5,FCalc.Subtracao(10,5));
+end;
+
+procedure TestTCalc.TestMultipicacaoUmNumeroNegativo;
+begin
+   CheckEquals(-20,FCalc.Mult(-2,10));
+   CheckEquals(-30,FCalc.Mult(3,-10));
+end;
+
+procedure TestTCalc.TestMultiplicacaoDoisNumerosNegativos;
+begin
+    CheckEquals(50,FCalc.Mult(-5,-10));
+end;
+
+procedure TestTCalc.TestMultiplicacaoNumerosPositivos;
+begin
+    CheckEquals(50,FCalc.Mult(5,10));
 end;
 
 procedure TestTCalc.TestSubtracaoDoisNumerosNegativos;
