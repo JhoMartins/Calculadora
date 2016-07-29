@@ -33,11 +33,6 @@ type
     procedure TestMultiplicacaoNumerosPositivos;
     procedure TestMultipicacaoUmNumeroNegativo;
     procedure TestMultiplicacaoDoisNumerosNegativos;
-    procedure TesteDivisaoNumerosPositivos;
-    procedure TesteDivisaoUmNumeroNegativo;
-    procedure TesteDivisaoDoisNumerosNegativos;
-    procedure TesteDivisaoPrimeiroNumeroZero;
-    procedure TesteDivisaoPorZero;
   end;
 
 implementation
@@ -67,32 +62,6 @@ procedure TestTCalc.TestAdicaoUmNumeroNegativo;
 begin
   CheckEquals(5,FCalc.Adicao(10,-5));
   CheckEquals(6,FCalc.Adicao(-4,10));
-end;
-
-procedure TestTCalc.TesteDivisaoDoisNumerosNegativos;
-begin
-  CheckEquals(2,FCalc.Divisao(-20,-10));
-end;
-
-procedure TestTCalc.TesteDivisaoNumerosPositivos;
-begin
-  CheckEquals(2,FCalc.Divisao(20,10));
-end;
-
-procedure TestTCalc.TesteDivisaoPorZero;
-begin
-   CheckEquals(0,FCalc.Divisao(10,0));
-end;
-
-procedure TestTCalc.TesteDivisaoPrimeiroNumeroZero;
-begin
-   CheckEquals(0,FCalc.Divisao(0,10));
-end;
-
-procedure TestTCalc.TesteDivisaoUmNumeroNegativo;
-begin
-   CheckEquals(-2,FCalc.Divisao(-20,10));
-   CheckEquals(-5,FCalc.Divisao(20,-4));
 end;
 
 procedure TestTCalc.TesteSubtracaoNumerosPositivos;

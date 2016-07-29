@@ -2,15 +2,11 @@ unit Calc;
 
 interface
 
-uses  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
-
 type TCalc = class
 public
       function Adicao(x,y : integer):integer;
       function Subtracao (x,y : integer):integer;
       function Mult (x,y : integer):integer;
-      function Divisao (x,y : integer):real;
 end;
 
 implementation
@@ -21,16 +17,6 @@ implementation
 function TCalc.Adicao(x, y: integer): integer;
 begin
    Result:= x + y;
-end;
-
-function TCalc.Divisao(x, y: integer): real;
-begin
-   if (y <> 0) then Result:= x / y
-   else
-    begin
-      ShowMessage('Não existe divisão por 0');
-      Result:= 0;
-    end;
 end;
 
 function TCalc.Mult(x, y: integer): integer;
