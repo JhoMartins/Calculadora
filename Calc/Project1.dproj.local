@@ -6,9 +6,14 @@
     <Transaction>2016/06/25 12:41:44.000.305,=C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2016/07/07 13:10:09.000.872,=C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2016/07/07 13:11:51.000.112,=C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2016/07/07 13:12:22.000.082,C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Calc.pas</Transaction>
-    <Transaction>2016/07/07 13:21:42.000.324,C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Calc.pas=C:\Development\Calculadora\Calc\Calc.pas</Transaction>
-    <Transaction>2016/07/07 13:21:45.000.292,C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Development\Calculadora\Calc\Project1.dproj</Transaction>
+    <Transaction>2016/07/07 13:12:22.000.082,C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Calc.pas=C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2016/07/07 13:21:42.000.324,C:\Development\Calculadora\Calc\Calc.pas=C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Calc.pas</Transaction>
+    <Transaction>2016/07/07 13:21:45.000.292,C:\Development\Calculadora\Calc\Project1.dproj=C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2016/07/28 20:28:36.000.946,=C:\Development\Calculadora\Calc\Unit1.pas</Transaction>
+    <Transaction>2016/07/29 19:12:34.212,=C:\Development\Calculadora\Calc\Unit1.pas</Transaction>
+    <Transaction>2016/07/29 20:44:01.169,C:\Development\Calculadora\Calc\Form.dfm=C:\Development\Calculadora\Calc\Unit1.dfm</Transaction>
+    <Transaction>2016/07/29 20:44:01.169,C:\Development\Calculadora\Calc\Form.pas=C:\Development\Calculadora\Calc\Unit1.pas</Transaction>
+    <Transaction>2016/07/29 21:18:18.014,C:\Development\Calculadora\bin\Form.dfm=C:\Development\Calculadora\Calc\Form.dfm</Transaction>
+    <Transaction>2016/07/29 21:18:18.014,C:\Development\Calculadora\bin\Form.pas=C:\Development\Calculadora\Calc\Form.pas</Transaction>
   </Transactions>
 </BorlandProject>
