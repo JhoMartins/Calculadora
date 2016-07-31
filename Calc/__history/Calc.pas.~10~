@@ -18,8 +18,6 @@ implementation
 
 { TCalc }
 
-uses Form;
-
 function TCalc.Adicao(x, y: integer): integer;
 begin
    Result:= x + y;
