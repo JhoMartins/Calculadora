@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Calc;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
   TForm1 = class(TForm)
@@ -26,6 +26,7 @@ type
     btnsub: TButton;
     btnmult: TButton;
     btnig: TButton;
+    btndel: TButton;
     procedure btn7Click(Sender: TObject);
     procedure btn8Click(Sender: TObject);
     procedure btn9Click(Sender: TObject);
@@ -42,8 +43,6 @@ type
     procedure btnsubClick(Sender: TObject);
     procedure btndivClick(Sender: TObject);
     procedure btnmultClick(Sender: TObject);
-    procedure btnigClick(Sender: TObject);
-    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -54,23 +53,20 @@ var
   Form1: TForm1;
   x,y : integer;
   op: char;
-  Calculo : TCalc;
 implementation
 
 {$R *.dfm}
 
-
+uses Calc;
 
 procedure TForm1.btn6Click(Sender: TObject);
 begin
-  if (Edit1.Text <> '0') then Edit1.Text:= Edit1.Text + '6'
-  else Edit1.Text:= '6';
+  Edit1.Text:= Edit1.Text + '6';
 end;
 
 procedure TForm1.btn3Click(Sender: TObject);
 begin
-  if (Edit1.Text <> '0') then Edit1.Text:= Edit1.Text + '3'
-  else Edit1.Text:= '3';
+  Edit1.Text:= Edit1.Text + '3';
 end;
 
 procedure TForm1.btnpontoClick(Sender: TObject);
@@ -85,57 +81,44 @@ begin
   op:= '-';
 end;
 
-procedure TForm1.FormShow(Sender: TObject);
-begin
-  Edit1.Text:= '0';
-end;
-
 procedure TForm1.btn7Click(Sender: TObject);
 begin
-   if (Edit1.Text <> '0') then Edit1.Text:= Edit1.Text + '7'
-  else Edit1.Text:= '7';
+    Edit1.Text:= Edit1.Text + '7';
 end;
 
 procedure TForm1.btn4Click(Sender: TObject);
 begin
-  if (Edit1.Text <> '0') then Edit1.Text:= Edit1.Text + '4'
-  else Edit1.Text:= '4';
+  Edit1.Text:= Edit1.Text + '4';
 end;
 
 procedure TForm1.btn1Click(Sender: TObject);
 begin
-  if (Edit1.Text <> '0') then Edit1.Text:= Edit1.Text + '1'
-  else Edit1.Text:= '1';
+  Edit1.Text:= Edit1.Text + '1';
 end;
 
 procedure TForm1.btn8Click(Sender: TObject);
 begin
-  if (Edit1.Text <> '0') then Edit1.Text:= Edit1.Text + '8'
-  else Edit1.Text:= '8';
+  Edit1.Text:= Edit1.Text + '8';
 end;
 
 procedure TForm1.btn5Click(Sender: TObject);
 begin
-  if (Edit1.Text <> '0') then Edit1.Text:= Edit1.Text + '5'
-  else Edit1.Text:= '5';
+  Edit1.Text:= Edit1.Text + '5';
 end;
 
 procedure TForm1.btn2Click(Sender: TObject);
 begin
-  if (Edit1.Text <> '0') then Edit1.Text:= Edit1.Text + '2'
-  else Edit1.Text:= '2';
+  Edit1.Text:= Edit1.Text + '2';
 end;
 
 procedure TForm1.btn0Click(Sender: TObject);
 begin
-  if (Edit1.Text <> '0') then Edit1.Text:= Edit1.Text + '0'
-  else Edit1.Text:= '0';
+  Edit1.Text:= Edit1.Text + '0';
 end;
 
 procedure TForm1.btn9Click(Sender: TObject);
 begin
-  if (Edit1.Text <> '0') then Edit1.Text:= Edit1.Text + '9'
-  else Edit1.Text:= '9';
+  Edit1.Text:= Edit1.Text + '9';
 end;
 
 procedure TForm1.btnaddClick(Sender: TObject);
@@ -147,7 +130,7 @@ end;
 
 procedure TForm1.btnceClick(Sender: TObject);
 begin
-  Edit1.Text:= '0';
+  Edit1.Clear;
 end;
 
 procedure TForm1.btndivClick(Sender: TObject);
@@ -155,19 +138,6 @@ begin
   x:= StrToInt(Edit1.Text);
   Edit1.Clear;
   op:= '/';
-end;
-
-procedure TForm1.btnigClick(Sender: TObject);
-begin
-    y:= StrToInt(Edit1.Text);
-    case
-      op of
-        '+' : Edit1.Text:= IntToStr(Calculo.Adicao(x,y));
-        '-' : Edit1.Text:= IntToStr(Calculo.Subtracao(x,y));
-        '*' : Edit1.Text:= IntToStr(Calculo.Mult(x,y));
-        '/' : Edit1.Text:= FloatToStr(Calculo.Divisao(x,y));
-        else ShowMessage('Erro!');
-    end;
 end;
 
 procedure TForm1.btnmultClick(Sender: TObject);
