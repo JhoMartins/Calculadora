@@ -1,6 +1,7 @@
 # Calculadora
+--Versão 1.0.0
+
 Projeto de uma Calculadora utilizando Delphi com orientação a objetos e teste unitário DUnit
-#versão 1.0.0
 #Funcionamento 
 -Unit com classe principal Calc com métodos das operações
 
