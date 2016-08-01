@@ -51,9 +51,9 @@ object Form1: TForm1
     OnClick = btn1Click
   end
   object btndiv: TButton
-    Left = 8
-    Top = 183
-    Width = 41
+    Left = 192
+    Top = 139
+    Width = 88
     Height = 38
     Caption = '/'
     TabOrder = 4
@@ -127,7 +127,7 @@ object Form1: TForm1
     Top = 183
     Width = 41
     Height = 38
-    Caption = ','
+    Caption = '.'
     TabOrder = 12
     OnClick = btnpontoClick
   end
@@ -159,9 +159,9 @@ object Form1: TForm1
     OnClick = btnsubClick
   end
   object btnmult: TButton
-    Left = 192
-    Top = 139
-    Width = 88
+    Left = 8
+    Top = 183
+    Width = 41
     Height = 38
     Caption = '*'
     TabOrder = 16
