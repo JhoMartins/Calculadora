@@ -7,10 +7,10 @@ uses  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.
 
 type TCalc = class
 public
-      function Adicao(x,y : real):real;
-      function Subtracao (x,y : real):real;
-      function Mult (x,y : real):real;
-      function Divisao (x,y : real):real;
+      function Adicao(x,y : integer):integer;
+      function Subtracao (x,y : integer):integer;
+      function Mult (x,y : integer):integer;
+      function Divisao (x,y : integer):real;
 end;
 
 implementation
@@ -18,12 +18,14 @@ implementation
 
 { TCalc }
 
-function TCalc.Adicao(x, y: real): real;
+uses Form;
+
+function TCalc.Adicao(x, y: integer): integer;
 begin
    Result:= x + y;
 end;
 
-function TCalc.Divisao(x, y: real): real;
+function TCalc.Divisao(x, y: integer): real;
 begin
    if (y <> 0) then Result:= x / y
    else
@@ -33,12 +35,12 @@ begin
     end;
 end;
 
-function TCalc.Mult(x, y: real): real;
+function TCalc.Mult(x, y: integer): integer;
 begin
   Result:= x * y;
 end;
 
-function TCalc.Subtracao(x, y: real): real;
+function TCalc.Subtracao(x, y: integer): integer;
 begin
   Result:= x - y;
 end;

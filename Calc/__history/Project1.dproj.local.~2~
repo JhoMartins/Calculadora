@@ -10,12 +10,10 @@
     <Transaction>2016/07/07 13:21:42.000.324,C:\Development\Calculadora\Calc\Calc.pas=C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Calc.pas</Transaction>
     <Transaction>2016/07/07 13:21:45.000.292,C:\Development\Calculadora\Calc\Project1.dproj=C:\Users\Jhonatan\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2016/07/28 20:28:36.000.946,=C:\Development\Calculadora\Calc\Unit1.pas</Transaction>
-    <Transaction>2016/07/29 19:12:34.000.212,=C:\Development\Calculadora\Calc\Unit1.pas</Transaction>
-    <Transaction>2016/07/29 20:44:01.000.169,C:\Development\Calculadora\Calc\Form.pas=C:\Development\Calculadora\Calc\Unit1.pas</Transaction>
-    <Transaction>2016/07/29 20:44:01.000.169,C:\Development\Calculadora\Calc\Form.dfm=C:\Development\Calculadora\Calc\Unit1.dfm</Transaction>
-    <Transaction>2016/07/29 21:18:18.000.014,C:\Development\Calculadora\bin\Form.pas=C:\Development\Calculadora\Calc\Form.pas</Transaction>
-    <Transaction>2016/07/29 21:18:18.000.014,C:\Development\Calculadora\bin\Form.dfm=C:\Development\Calculadora\Calc\Form.dfm</Transaction>
-    <Transaction>2016/07/29 21:34:10.000.877,=C:\Development\Calculadora\Calc\Form.pas</Transaction>
-    <Transaction>2016/07/31 19:37:39.290,=C:\Development\Calculadora\Calc\Form.pas</Transaction>
+    <Transaction>2016/07/29 19:12:34.212,=C:\Development\Calculadora\Calc\Unit1.pas</Transaction>
+    <Transaction>2016/07/29 20:44:01.169,C:\Development\Calculadora\Calc\Form.dfm=C:\Development\Calculadora\Calc\Unit1.dfm</Transaction>
+    <Transaction>2016/07/29 20:44:01.169,C:\Development\Calculadora\Calc\Form.pas=C:\Development\Calculadora\Calc\Unit1.pas</Transaction>
+    <Transaction>2016/07/29 21:18:18.014,C:\Development\Calculadora\bin\Form.dfm=C:\Development\Calculadora\Calc\Form.dfm</Transaction>
+    <Transaction>2016/07/29 21:18:18.014,C:\Development\Calculadora\bin\Form.pas=C:\Development\Calculadora\Calc\Form.pas</Transaction>
   </Transactions>
 </BorlandProject>
